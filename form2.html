@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>form</title>
+</head>
+<body>
+	<h1 align="center">Candidate Information</h1>
+<form>	
+<table bgcolor="skyblue" border="2px" align="center">
+	<tr>
+		<td>Name:<sup style="color:red">*</sup></td>
+		<td><input type="text" name="Name" SIZE="15" required> 
+	</tr>
+	<tr>
+		<td>Password:<sup style="color:red">*</sup></td>
+		<td><input type="password" name="Password" SIZE="15" required> 
+	</tr>
+	<tr>
+		<td>Phone Number:<sup style="color:red">*</sup></td>
+		<td><input type="tel" name="phnumber" SIZE="10" required> 
+	</tr>
+	<tr>
+		<td>Gender:<sup style="color:red">*</sup></td>
+		<td><input type="radio" name="gender" value="male" checked>Male
+		<input type="radio" name="gender" value="female" checked>Female<br></td> 
+	</tr>
+	<tr>
+		<td>Date of Birth<sup style="color:red">*</sup></td>
+		<td><input type="date" name="date" required> 
+	</tr>
+	<tr>
+		<td>Email:<sup style="color:red">*</sup></td>
+		<td><input type="email" name="mail" required > 
+	</tr>
+	<tr>
+		<td>Highest Qualification:<sup style="color:red">*</sup></td>
+		<td>
+			<select>
+				<option value="Select highest qualification">Select highest qualification</option>
+				<option value="B.Tech">B.Tech</option>
+				<option value="M.Tech">M.Tech</option>
+				<option value="MBA">MBA</option>
+				<option value="MCA">MCA</option>
+				<option value="MSC">MSC</option>
+				<option value="MA">MA</option>
+				<option value="BSC">BSC</option>	
+			</select>
+	</tr>
+	<tr>
+		<td>Course interested in:<sup style="color:red">*</sup></td>
+		<td><input type="checkbox" name="course1" value="JAVA" >JAVA
+		<input type="checkbox" name="course2" value="HTML5" >HTML5
+		<input type="checkbox" name="course3" value="CSS3" >CSS3
+		<input type="checkbox" name="course4" value="AngularJS" >AngularJS
+		<input type="checkbox" name="course1" value="JQuery" >JQuery<br></td> 
+	</tr>
+	<tr>
+		<td>Comments(Mention External Certification if any):</td>
+		<td><textarea name="comment" rows="5" cols="50" > </textarea>
+	</tr>
+	<tr>
+		<td>Upload Degree/ External Certificates:<sup style="color:red">*</sup></td>
+		<td><input type="file" name="fnm" required> <br><br>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="Submit" Value="Submit Information" name="s-but">
+			<input type="reset" Value="Clear"></td>
+	</tr>
+
+</form>
+
+</table>
+<p style="color:red" align="center"> All fields marked(*) are mandatory</p>
+</body>
