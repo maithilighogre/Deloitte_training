@@ -8,6 +8,8 @@ public class EmployeeApplication {
 	{
 		if(emp.getAge()< 18)
 			throw new EmployeeAgeException("Age must be greater than 18");
+		else
+			System.out.println("Successfully Added");
 		
 		for(int i=0;i<b.length;i++)
 		{
@@ -29,6 +31,13 @@ public class EmployeeApplication {
 			
 			addEmp(b1);
 			addEmp(b2);
+		}catch(EmployeeAgeException e){
+			System.out.println(e);
+		}
+		catch(EmployeeIndexException e){
+			System.out.println(e);
+		}
+		try{
 			System.out.println("Enter new Employee details(0 or 1)");
 			int c=sc.nextInt();
 			if(c==1){
@@ -42,7 +51,6 @@ public class EmployeeApplication {
 				int age=sc.nextInt();
 				Employee b3=new Employee(id,name,des,age);
 				addEmp(b3);
-				System.out.println("Successfully Added");
 			}
 			index++;
 			}
