@@ -24,10 +24,13 @@ public class EmployeeApplication {
 		EmployeeApplication b[]=new EmployeeApplication[5];
 		Scanner sc=new Scanner(System.in);
 		Employee b1=new Employee(101,"Uttam","BTA",22);
-		Employee b2=new Employee(102,"Yami","HR",12);
-		System.out.println("Enter new Employee details(0 or 1)");
-		int c=sc.nextInt();
+		Employee b2=new Employee(102,"Yami","HR",12);		
 		try{
+			
+			addEmp(b1);
+			addEmp(b2);
+			System.out.println("Enter new Employee details(0 or 1)");
+			int c=sc.nextInt();
 			if(c==1){
 				System.out.println("Enter Details:\n1.Employee Id:");
 				int id=sc.nextInt();
