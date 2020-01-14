@@ -17,7 +17,7 @@ public class SeleniumWebDriver {
 	private static String fileWithPath;
 	public static void main(String args[]) throws InterruptedException, IOException{
 		System.setProperty("webdriver.chrome.driver","c:\\chromedriver\\chromedriver.exe");
-				DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setCapability("marionette", true);
 		WebDriver driver= new ChromeDriver();
 		
@@ -59,9 +59,9 @@ public class SeleniumWebDriver {
 //			Select sel=new Select(driver.findElement(By.id("new")));
 //			sel.selectByVisibleText("What's New");
 	
-	
-//		driver.get("https://www.myntra.com");
-//		driver.findElement(By.cssSelector("#mountRoot > div > div > div > form > fieldset.register-input-container > div:nth-child(3) > input"));
+	driver.get("https://www.facebook.com");
+		driver.findElement(By.cssSelector("#u_0_m"));
+		
 		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src,new File("c:/SeleniumWorkspace/error.png"));
